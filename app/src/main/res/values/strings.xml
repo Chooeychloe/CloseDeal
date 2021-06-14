@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CloseDeal</string>
+    <string name="title_activity_user_dash_board">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Number1">"•	If you need to meet in-person, wash your hands for 20 seconds with soap, or use an alcohol-based rub, before and after every Gumtree exchange."</string>
+    <string name="Number2">•	Whether you’re trading or sharing, clean items as per product care instructions or with regular household cleaners. When holding a car inspection have the vehicle ready at a convenient location, cleaning the keys, steering wheel and console.</string>
+    <string name="Number3">•	To reduce physical contact, offer or request a virtual inspection of an item. Avoid filters and aim for daylight.</string>
+    <string name="Number4">•	Remember to maintain safe social distancing of 1.5m, and consider leaving clean items in an accessible area ready to exchange. Take photos and message clear instructions of the area or organize doorstep drops at a mutually agreed time.	</string>
+    <string name="Number5">•	The best way to reduce the spread of germs and disease is to keep your hands clean, avoid direct contact and maintain 1.5m social distancing wherever possible. So instead of the classic handshake, rate your interaction on Gumtree, or simply give a wave or thumbs up.</string>
+    <string name="Number6">•	Consider the wellbeing of the community and stay home if you or one of your family/friends are sick. Simply pause your listing or delay your transactions until everyone in your household is better. Please continue to refer to your local state Government for the latest responses and restrictions relating to COVID-19.</string>
+    <string name="Faqs_1">• Close Deal features an easy way of getting the things you needed. What’s more, it serves as a method of getting rid of things you don’t need anymore without making a waste out of it. You can either share it for free or trade the items to various individuals base on what you want in return!</string>
+    <string name="Faqs_2">•	Close Deal is a friendly user and easy to use application, with a simple tap of the “add” button, you can upload images and choose whether the item you uploaded is for sharing or for trade. Users can also add brief descriptions about the item they posted.</string>
+    <string name="Faqs_3">•	Users can upload various items such as fashion clothing, shoes, appliances, food and other essential items for trade and sharing purposes.</string>
+    <string name="Faqs_4">•	After uploading the items, the user who uploaded the item will receive notification eventually. Then, uploader can have a conversation with the other interested user for the item. From there, they can negotiate and set the process of pick up points base on the conditions they made and by accepting the offer, it’s a Close Deal!</string>
+    <string name="Faqs_5">•	The Close Deal mobile application contains feature that ensures one email, one mobile number per account verification system that assures each user’s security while using the application.</string>
+    <string name="Terms_and_conditions">Welcome to Close Deal mobile application. Please carefully read these terms and conditions before accessing, using any materials, information, products or services of the application. By accessing the Close Deal on mobile or tablet application or any other feature using the Close Deal platform, you agree and to be bound by these terms and conditions and our Privacy Policy.  If you do not meet or accept these terms and conditions, you may not use our application and free to use other mobile application platforms.</string>
+    <string name="Terms_and_condition_1">these includes ensuring that you have the rights needed for you to post items without violating the legal rights of the other users which includes defamation or any applicable laws.</string>
+    <string name="Terms_and_condition_2">you also grant us and the other users of the Close Deal platform the rights to view and propose a deal to the items you post.</string>
+    <string name="Terms_and_condition_3">these includes accepting the risks of proposed deals using the Close Deal platform.</string>
+    <string name="Terms_and_condition_4">you are responsible for your own use of the Close Deal platform. Our platform information and materials provided to you is without any guarantees.</string>
+    <string name="Terms_and_condition_5">these includes accepting proposed deals using currency as an added value.</string>
+    <string name="title_activity_users_nearby">Map</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_key">AIzaSyBTCZBkFAJaRUv-Rn-z8VUUPgpuefeX56Y</string>
+    <string name="map_key">AIzaSyB_qsP8AOP-P0MdlPz-48TDaJYjTP3vbjo</string>
+
+</resources>

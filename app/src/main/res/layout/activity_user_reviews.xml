@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.UserReviewsActivity">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_photo"
+            app:civ_border_color="@color/Base"
+            app:civ_border_width="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTv"
+            android:text="name"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:text="4.3[100,098,577]"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingsTv"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        tools:listitem="@layout/row_reviews"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/reviewsRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

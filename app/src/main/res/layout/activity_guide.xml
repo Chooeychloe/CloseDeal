@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/signup_bg"
+    tools:context=".Activities.InProfile.GuideActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="Share and Propose a Trade using these easy steps:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Step 1:"
+            android:textColor="@color/Base"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:justificationMode="inter_word"
+            android:text="Upload chosen items for Sharing and Trade purpose by tapping the “add” button."
+            android:textSize="18sp"
+            android:textStyle="italic"></TextView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pic_img"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Step 2:"
+            android:textColor="@color/Base"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:justificationMode="inter_word"
+            android:text="Wait for notification about the uploaded Item."
+            android:textSize="18sp"
+            android:textStyle="italic"></TextView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/notify_img"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Step 3:"
+            android:textColor="@color/Base"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:justificationMode="inter_word"
+            android:text="Get notified and converse with other users who are interested and choose the preferred user for sharing or the best proposed option for trade offers."
+            android:textSize="18sp"
+            android:textStyle="italic"></TextView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sms_icon"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Step 4:"
+            android:textColor="@color/Base"
+            android:textSize="20sp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:justificationMode="inter_word"
+            android:text="Set up a meet up point or pick up process that meets both you and other user’s condition."
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/location_img"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Step 5:"
+            android:textColor="@color/Base"
+            android:textSize="20sp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:justificationMode="inter_word"
+            android:text="It’s a Close Deal!"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/agree_img"></ImageView>
+
+    </LinearLayout>
+
+</ScrollView>

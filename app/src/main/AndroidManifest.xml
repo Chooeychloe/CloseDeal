@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.f.closedeal">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CloseDeal">
+        <activity android:name=".Activities.EditPostActivity"></activity>
+        <activity android:name=".Activities.GroupEditActivity" />
+        <activity android:name=".Activities.GroupInfoActivity" />
+        <activity android:name=".Activities.InProfile.SafetyProtocolWebActivity" />
+        <activity android:name=".Activities.GroupParticipantsActivity" />
+        <activity android:name=".Activities.GroupChatActivity" />
+        <activity android:name=".Activities.CreateGroup" />
+        <activity android:name=".Activities.InProfile.SafetyProtocolActivity" />
+        <activity android:name=".Activities.InProfile.GuideActivity" />
+        <activity android:name=".Activities.InProfile.FAQActivity" />
+        <activity android:name=".Activities.InProfile.FeedbackActivity" />
+        <activity android:name=".Activities.ZoomImageActivity" />
+        <activity android:name=".Activities.TermsAndCondition.CommunityGuidelinesActivity" />
+        <activity android:name=".Activities.TermsAndCondition.DataPolicyActivity" />
+        <activity android:name=".Activities.TermsAndCondition.TermsofServiceActivity" />
+        <activity android:name=".Activities.TermsAndCondition.TermsAndConditionActivity" />
+        <activity android:name=".Activities.GetUserLocationActivity" />
+        <activity android:name=".Activities.PostLikeByActivity" />
+        <activity android:name=".Activities.UserReviewsActivity" />
+        <activity android:name=".Activities.WriteReviewActivity" />
+        <activity android:name=".Activities.SettingsActivity" />
+        <activity android:name=".Activities.PostDetailActivity" />
+        <activity android:name=".Activities.ReportActivity" />
+        <activity android:name=".Activities.RateActivity" />
+        <activity android:name=".Activities.InProfile.VerifyOTPActivity" />
+        <activity android:name=".Activities.InProfile.PhoneNumberVerificationActivity" />
+        <activity android:name=".Activities.ThereProfileActivity" />
+        <activity android:name=".Activities.PostActivity" />
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:theme="@style/Theme.CloseDeal.NoActionBar" />
+        <activity
+            android:name=".Activities.StartUpActivities.LoginActivity"
+            android:theme="@style/Theme.CloseDeal.NoActionBar" />
+        <activity android:name=".Activities.HomeActivity" />
+        <activity
+            android:name=".Activities.StartUpActivities.LoginSignUp"
+            android:theme="@style/Theme.CloseDeal.NoActionBar" />
+        <activity
+            android:name=".Activities.StartUpActivities.OnBoarding"
+            android:theme="@style/Theme.CloseDeal.NoActionBar" />
+        <activity
+            android:name=".Activities.StartUpActivities.RegisterActivity"
+            android:theme="@style/Theme.CloseDeal.NoActionBar" />
+        <activity
+            android:name=".Activities.StartUpActivities.SplashScreen"
+            android:theme="@style/Theme.CloseDeal.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name=".Notifications.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

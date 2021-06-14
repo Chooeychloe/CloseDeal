@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ReportActivity">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            android:layout_below="@id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileIv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/default_photo" />
+
+            <TextView
+                android:id="@+id/user_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/account_img"
+                android:text="Full name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_toRightOf="@id/profileIv"
+                android:layout_marginStart="10dp"
+                android:id="@+id/account_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/account_icon"
+                android:contentDescription="TODO" />
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/email_img"
+                android:layout_below="@id/user_fullname"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_toRightOf="@id/profileIv"
+                android:id="@+id/email_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/email_icon"
+                android:contentDescription="TODO" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_marginBottom="5dp"
+            android:id="@+id/descriptionReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Report Description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="5"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Share"
+                android:text="Sharing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/Trade"
+                android:text="Trading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supporting report image: "/>
+
+        <ImageView
+            android:id="@+id/addPhoto"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/add_post_icon"
+            android:contentDescription="TODO"></ImageView>
+
+        <Button
+            android:id="@+id/buttonReport"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/custom_border"
+            android:elevation="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>

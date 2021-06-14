@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/popup_userImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/popup_title"
+                android:src="@drawable/profile_icon"
+                android:contentDescription="TODO"></ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/popup_title"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Item Name"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/pen_icon"
+                app:startIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/popup_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/popup_description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_title"
+                android:layout_marginTop="10dp"
+                android:hint="Description"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/pen_icon"
+                app:startIconTint="@color/black">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/popup_description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/now_post_profile_img"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_below="@+id/popup_description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_img_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popup_description"
+                android:contentDescription="TODO"></ImageView>
+
+            <Button
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/now_post_profile_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:padding="12dp"
+                android:src="@drawable/add_icon"
+                android:text="POST"
+                android:textColor="@color/black"
+                android:textSize="18dp"></Button>
+
+            <ProgressBar
+                android:id="@+id/popup_progressBar"
+                android:layout_width="100dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/now_post_profile_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:padding="12dp"
+                android:visibility="invisible"></ProgressBar>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

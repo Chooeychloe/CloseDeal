@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="Home"></item>
+
+    <item
+        android:id="@+id/bottom_nav_chat"
+        android:icon="@drawable/chat_icon"
+        android:title="Chat"></item>
+
+    <item
+        android:id="@+id/bottom_nav_add"
+        android:icon="@drawable/add_icon"
+        android:title="Add Post"></item>
+
+    <item
+        android:id="@+id/bottom_nav_users"
+        android:icon="@drawable/users_icon"
+        android:title="Users"></item>
+
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"
+        ></item>
+
+</menu>

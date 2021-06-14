@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    tools:context=".Activities.TermsAndCondition.CommunityGuidelinesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:text="  The purpose of Close Deal application is to let its users post their items and communicate with other users with the purpose of sharing and bartering their essential items. We, the developers understand how important it is for Close Deal to be the place and platform where the users will feel empowered to communicate while sharing and bartering their posted items, that is why we take it seriously when performing our role to keep the abuse off our service."
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:text="  Our commitment to expression is paramount but at the same time, we recognize that the internet creates new and increased opportunities for abuse. For these reasons, when we limit expression, we do it in service of one or more of the following values:"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/authenticity_img"
+            android:text="* Authenticity"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:text="  - We want to make sure the content people are seeing on Close Deal is authentic. We believe that the authenticity creates a better environment for posting, sharing, bartering and communicating and that is why we don’t want people using Close Deal to misrepresent who they are and the actions that they are doing."
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/safety_img"
+            android:text="* Safety"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:text="  - We are committed in making Close Deal a safe platform. Expression that threatens people has the potential to intimidate, exclude or silence others are NOT allowed on Close Deal."
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/privacy_img"
+            android:text="* Privacy"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:text="  - We are committed to protecting personal privacy and information. Privacy gives people freedom to be themselves and to choose how and when to use Close Deal to communicate as well as share and trade essential items."
+            android:textColor="@color/black" />
+    </LinearLayout>
+</ScrollView>

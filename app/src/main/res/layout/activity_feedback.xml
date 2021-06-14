@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/signup_bg"
+    tools:context=".Activities.InProfile.FeedbackActivity">
+    <TextView
+        android:id="@+id/nav_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:text="Write us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"></TextView>
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:text=" 'We value your feedback in improving our service better.'"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp" />
+
+    <TextView
+        android:justificationMode="inter_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feel free to write your thoughts."
+        android:layout_gravity="center_horizontal"
+        android:textStyle="italic"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/feedbackTxt"
+        android:drawableEnd="@drawable/pen_icon"
+        android:hint="Type here..."
+        android:inputType="textCapSentences|textMultiLine"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/feedback_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/black" />
+
+</LinearLayout>

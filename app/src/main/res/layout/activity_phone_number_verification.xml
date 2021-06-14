@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    tools:context=".Activities.InProfile.PhoneNumberVerificationActivity">
+
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.hbb20.CountryCodePicker
+
+        android:id="@+id/ccp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="+63"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:layout_weight="4"
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone Number (without 0 at start)"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/otpNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:inputType="phone" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/verifyOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/reSendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP" />
+
+</LinearLayout>

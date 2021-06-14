@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activities.TermsAndCondition.TermsAndConditionActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Gray" />
+
+    <RelativeLayout
+        android:id="@+id/termsOfService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tc1"
+            android:text="Terms of Service"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/tc1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/terms_of_service_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Gray" />
+
+    <RelativeLayout
+        android:id="@+id/dataPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tc2"
+            android:text="Data Policy"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/tc2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/data_policy_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Gray" />
+
+    <RelativeLayout
+        android:id="@+id/communityGuidelines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tc3"
+            android:text="Community Guidelines"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/tc3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/community_guidelines_icon" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Gray" />
+
+</LinearLayout>
+

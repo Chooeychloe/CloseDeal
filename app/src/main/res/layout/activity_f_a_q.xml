@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/signup_bg"
+    tools:context=".Activities.InProfile.FAQActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/faqs"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Why should I use Close Deal?"
+            android:textColor="@color/Base"
+            android:textSize="20sp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="@string/Faqs_1"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="How can I upload items using the Application?"
+            android:textColor="@color/Base"
+            android:textSize="20sp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="@string/Faqs_2"
+            android:textSize="18sp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="What kind of things can I upload for trade and sharing purpose?"
+            android:textColor="@color/Base"
+            android:textSize="20sp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="@string/Faqs_3"
+            android:textSize="18sp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="How does the trade and sharing process work?"
+            android:textColor="@color/Base"
+            android:textSize="20sp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="@string/Faqs_4"
+            android:textSize="18sp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="What security assurance can I have using the Close Deal mobile application?"
+            android:textColor="@color/Base"
+            android:textSize="20sp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="@string/Faqs_5"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+</ScrollView>

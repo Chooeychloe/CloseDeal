@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/signup_bg"
+    tools:context=".Activities.GetUserLocationActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/profileIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/default_photo" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:layout_below="@id/profileIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/user_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/account_img"
+            android:text="Full name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:id="@+id/account_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account_icon"
+            android:contentDescription="TODO" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/black"
+        android:id="@+id/userslocation"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textAlignment="center"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <View
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Base"
+        android:layout_width="250dp"
+        android:layout_height="2dp" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Country"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/locality"
+        android:text="Locality"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/addressLine"
+        android:text="Address"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:layout_margin="5dp"
+        android:id="@+id/mapFrag"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@id/addressLine"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+
+</LinearLayout>

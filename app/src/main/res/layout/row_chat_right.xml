@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileIv"
+            app:civ_border_color="@null"
+            android:visibility="gone"
+            android:src="@drawable/default_photo"/>
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02/03/2020 1:00PM"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_toRightOf="@id/timeTv"
+            android:layout_toEndOf="@id/timeTv"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/messageTv"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:text="My message"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_image_black"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/messageIv"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bg_sender"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/isSeenTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:text="delivered"
+        />
+
+</LinearLayout>

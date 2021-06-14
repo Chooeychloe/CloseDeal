@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GroupChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/groupIconIv"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:src="@drawable/group_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/groupTitleTv"
+                android:layout_toEndOf="@id/groupIconIv"
+                android:layout_centerVertical="true"
+                android:text="Group Title"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chatsRv"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/view"
+        app:stackFromEnd="true"
+        android:layout_above="@id/chatLayout"
+        tools:listitem="@layout/row_groupchat_left"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/attachBtn"
+            android:src="@drawable/ic_attach_black"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageEt"
+            android:hint="Start typing..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/send_icon" />
+
+    </LinearLayout>
+
+</RelativeLayout>

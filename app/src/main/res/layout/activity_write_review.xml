@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.WriteReviewActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/default_photo"
+        app:civ_border_color="@color/Base"
+        app:civ_border_width="10dp" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileIv"
+        android:layout_centerHorizontal="true"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Write us your experience with this user."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:numStars="5" />
+
+    <EditText
+        android:id="@+id/reviewEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_margin="20dp"
+        android:background="@drawable/black_border2"
+        android:gravity="top"
+        android:hint="Type your review here..."
+        android:padding="10dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_unblocked_white"
+        android:contentDescription="TODO" />
+</RelativeLayout>

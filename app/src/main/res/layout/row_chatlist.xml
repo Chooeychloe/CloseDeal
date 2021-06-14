@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/onlineStatusIv"
+            android:contentDescription="TODO" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/profileIv"
+            android:src="@drawable/default_photo"/>
+
+        <TextView
+            android:layout_toLeftOf="@id/onlineStatusIv"
+            android:layout_marginStart="4dp"
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="His Name"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/profileIv"
+            android:layout_toEndOf="@id/profileIv"/>
+
+        <TextView
+            android:maxLines="2"
+            android:layout_marginStart="4dp"
+            android:id="@+id/lastMessageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The last message"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/profileIv"
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_below="@id/nameTv"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
